@@ -79,3 +79,10 @@ address{
     padding:20px;
     background-color:rgba(0,0,0,0.7);
 }
+#zone-options label.active{
+    background-color: green;
+    border:0;
+}
+#zone-options label.active.focus{
+    box-shadow:none !important;
+}

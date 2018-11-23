@@ -71,6 +71,78 @@
             </div>
         </div>
     </div>
+    <div id="reservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title">Reserve a Table</h4>
+                <button class="close" type="button" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                    <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-3 col-form-label">Number of Guests</label>
+                            <div class="col-lg-9 col-md-9 col-sm-9 float-left">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
+                                    <label class="form-check-label" for="materialInline1">1</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
+                                    <label class="form-check-label" for="materialInline2">2</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                                    <label class="form-check-label" for="materialInline3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                                    <label class="form-check-label" for="materialInline3">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                                    <label class="form-check-label" for="materialInline3">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
+                                    <label class="form-check-label" for="materialInline3">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                                <label for="telnum" class="col-12 col-md-3 col-form-label">Number of Guests</label>
+                                <div class="col-lg-9 col-md-9 col-sm-9 float-left">
+                                        <div class="btn-group" data-toggle="buttons" id="zone-options">
+                                                <label class="btn btn-danger active" active>
+                                                  <input type="radio" name="options" id="non-smoking" data-toggle="toggle" checked hidden> Non-Smoking
+                                                </label>
+                                                <label class="btn btn-danger">
+                                                  <input type="radio" name="options" id="smoking" data-toggle="toggle" hidden>Smoking
+                                                </label>
+                                          </div>
+                                </div>
+                                
+                            </div>
+                        <div class="form-group row">
+                            <label for="telnum" class="col-12 col-md-3 col-form-label">Date and Time</label>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div for="telnum" class="col d-none d-sm-block"></div>
+                            <div class="col-sm-9">
+                                <button class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -82,8 +154,7 @@
                         <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm align-self-center">
-                    <a class="btn btn-block btn-warning" data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveTable">Reserve Table</a>
+                    <a class="btn btn-block btn-warning" data-toggle="modal" data-target="#reservationModal">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -135,123 +206,7 @@
                 </div>
             </div>
         </div>
-       <!-- <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Our Lipsmacking Culinary Creations</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                        <img src="img/uthappizza.png" alt="" class="d-flex mr-3 mt-0 img-fluid img-thumbnail align-items-center">
-                    <div class="media-right media-top">
-                        
-                    </div>
-                    <div class="media-body">
-                        <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span>
-                            <span class="badge badge-pill badge-secondary">$4.99</span>
-                        </h2>
-                        <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
-                    </div>
-                </div>    
-            </div>
-        </div>
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3">
-                <h3>This Month's Promotions</h3>
-            </div>
-            <div class="col col-sm col-md">
-                <div class="media">
-                    <div class="media-body">
-                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">HOT</span></h2>
-                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
-                    </div>
-                    <img src="img/buffet.png" alt="" class="d-flex ml-3 mt-0 img-fluid img-thumbnail align-items-center">
-                </div>
-                
-            </div>
-        </div>
-
-        <div class="row row-content align-items-center">
-            <div class="col-12 col-sm-4 col-md-3 order-sm-last">
-                <h3>Meet our Culinary Specialists</h3>
-            </div>
-            <div class="col col-sm col-md order-sm-first">
-                <div class="media">
-                    <img class="d-flex mr-3 mt-0 img-fluid img-thumbnail align-items-center" src="img/alberto.png" alt="Alberto Somayya">
-                    <div class="media-body">
-                        <h2 class="mt-0">Alberto Somayya</h2>
-                        <h4>Executive Chef</h4>
-                        <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with
-                                    whos-who in the culinary world, he specializes inbcreating mouthwatering Indo-Italian fusion experiences.
-                        </p>
-                    </div>
-                </div>   
-            </div>
-        </div>-->
-        <div class="row row-content align-items-center" id="reserveTable">
-            <div class="col d-none d-sm-block">
-
-            </div>
-            <div class="col-sm-8">
-                <div class="card">
-                    <div class="card-header bg-warning">
-                        <h2 class="card-title text-light">Reserve a table</h2>
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group row">
-                            <label for="telnum" class="col-12 col-md-3 col-form-label">Number of Guests</label>
-                            <div class="col-lg-9 col-md-9 col-sm-9 float-left">
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="materialInline1" name="inlineMaterialRadiosExample">
-                                    <label class="form-check-label" for="materialInline1">1</label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="materialInline2" name="inlineMaterialRadiosExample">
-                                    <label class="form-check-label" for="materialInline2">2</label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
-                                    <label class="form-check-label" for="materialInline3">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
-                                    <label class="form-check-label" for="materialInline3">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
-                                    <label class="form-check-label" for="materialInline3">5</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input type="radio" class="form-check-input" id="materialInline3" name="inlineMaterialRadiosExample">
-                                    <label class="form-check-label" for="materialInline3">6</label>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="form-group row">
-                            <label for="telnum" class="col-12 col-md-3 col-form-label">Date and Time</label>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Date">
-                            </div>
-                            <div class="col-md-4 col-sm-6 col-xs-12">
-                                <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Time">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div for="telnum" class="col d-none d-sm-block"></div>
-                            <div class="col-sm-9">
-                                <button class="btn btn-primary">Reserve</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col d-none d-sm-block">
-
-            </div>
-        </div>
+      
     </div>
 
     <footer class="footer">
@@ -300,11 +255,8 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+  
+   
 </body>
 
 </html>
