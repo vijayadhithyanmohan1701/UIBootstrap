@@ -43,3 +43,39 @@ address{
     border-bottom: 1px solid #ddd;
     padding: 10px; 
 }
+
+.carousel{
+    background: #512DA8;
+}
+
+.carousel-item{
+    height:300px;
+}
+
+.carousel-item img{
+    position: relative;;
+    top:0;
+    left:0;
+    width:33%;
+    float: left;
+    min-height:300px;
+}
+
+.carousel-caption {
+    position: relative !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 3% !important;
+    z-index: 10 !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+    color: #fff !important;
+    text-align: left !important;
+    float: left !important;
+    width: 60% !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    width:auto !important;
+    padding:20px;
+    background-color:rgba(0,0,0,0.7);
+}
