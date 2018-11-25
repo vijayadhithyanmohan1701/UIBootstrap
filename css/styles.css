@@ -76,8 +76,10 @@ address{
 }
 .carousel-control-next, .carousel-control-prev{
     width:auto !important;
-    padding:20px;
+    padding:10px;
     background-color:rgba(0,0,0,0.7);
+    top:45% !important;
+    bottom:auto !important;
 }
 #zone-options label.active{
     background-color: green;
@@ -85,4 +87,9 @@ address{
 }
 #zone-options label.active.focus{
     box-shadow:none !important;
+}
+#carouselButton {
+    right:0;
+    position: absolute;
+    bottom: 0px;
 }
