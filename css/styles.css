@@ -1,39 +1,82 @@
-row-header {
-  margin: 0ps auto;
-  padding: 0px, 0px;
-}
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px; }
+
 .row-content {
-  margin: 0ps auto;
-  padding: 50px, 0px;
+  margin: 0px auto;
+  padding: 50px 0px;
   border-bottom: 1px ridge;
-  min-height: 400px;
-}
+  min-height: 400px; }
+
 .footer {
   background-color: #D1C4E9;
-  margin: 0ps auto;
-  padding: 20px, 0px;
-}
+  margin: 0px auto;
+  padding: 20px 0px; }
+
 .jumbotron {
-  margin: 0ps auto;
-  padding: 70px, 30px;
-  background: #9575CD;
-  color: floralwhite;
-}
+  margin: 0px auto;
+  padding: 70px 30px;
+  background: #9575CD !important;
+  color: floralwhite; }
+
 address {
   font-size: 80%;
   margin: 0px;
-  color: #0f0f0f;
-}
+  color: #0f0f0f; }
+
 body {
   padding: 50px 0px 0px 0px;
-  z-index: 0;
-}
+  z-index: 0; }
+
 .navbar-dark {
-  background-color: #512DA8;
-}
+  background-color: #512DA8; }
+
 .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+.carousel {
+  background: #512DA8; }
+  .carousel .carousel-item {
+    height: 300px; }
+    .carousel .carousel-item img {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 33%;
+      float: left;
+      min-height: 300px; }
+
+#carouselButton {
+  right: 0px;
+  position: absolute;
+  bottom: 0px; }
+
+.carousel-caption {
+  position: relative !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 3% !important;
+  z-index: 10 !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  color: #fff !important;
+  text-align: left !important;
+  float: left !important;
+  width: 60% !important; }
+
+.carousel-control-next, .carousel-control-prev {
+  width: auto !important;
   padding: 10px;
-}
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 45% !important;
+  bottom: auto !important; }
+
+#zone-options label.active {
+  background-color: green;
+  border: 0; }
+
+#zone-options label.active.focus {
+  box-shadow: none !important; }
