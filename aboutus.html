@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="login-toggle">
                         <span class="fa fa-sign-in"></span> Login</a>
                     </span>
                 </div>
@@ -79,8 +79,10 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                        <img src="img/logo.png" class="img-fluid">
                 </div>
+                
             </div>
         </div>
     </header>
@@ -330,6 +332,16 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#login-toggle").click(function(){
+                $("#loginModal").modal({backdrop: true});
+            });
+            $("#reservation-toggle").click(function(){
+                $("#reservationModal").modal({backdrop: true});
+            });
+        });
+    </script>
 </body>
 
 </html>

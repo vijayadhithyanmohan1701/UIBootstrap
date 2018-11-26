@@ -8,6 +8,9 @@ $background-pale:#D1C4E9;
 
 $carousel-item-height: 300px;
 
+//Text Variables
+$text-color: #FFFAF0;
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
 	padding: $pad-up-dn $pad-left-right;
@@ -104,4 +107,19 @@ body{
 }
 #zone-options label.active.focus{
     box-shadow:none !important;
+}
+#loginModal, #reservationModal{
+    .modal-header{
+        background-color:$background-dark;
+        h4.modal-title{
+            color:$text-color;
+        }
+        button.close{
+            color: $text-color;
+        }
+    }
+    .modal-body{
+        background-color: $background-pale;
+    }
+
 }

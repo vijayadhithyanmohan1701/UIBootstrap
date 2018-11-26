@@ -80,3 +80,13 @@ body {
 
 #zone-options label.active.focus {
   box-shadow: none !important; }
+
+#loginModal .modal-header, #reservationModal .modal-header {
+  background-color: #512DA8; }
+  #loginModal .modal-header h4.modal-title, #reservationModal .modal-header h4.modal-title {
+    color: #FFFAF0; }
+  #loginModal .modal-header button.close, #reservationModal .modal-header button.close {
+    color: #FFFAF0; }
+
+#loginModal .modal-body, #reservationModal .modal-body {
+  background-color: #D1C4E9; }
